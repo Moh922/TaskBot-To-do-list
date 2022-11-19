@@ -1,0 +1,263 @@
+body{
+    overflow-x: hidden;
+}
+
+.main-section{
+    background: #f9f9f9;
+    width: 100vw;
+    height: 170vh;
+}
+.back{
+    height: 20rem;
+    margin: 3rem;
+    background-color: blueviolet;
+}
+
+.p-img-wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.p-img{
+    margin: 3rem ;
+    height: 24rem;
+    width: 24rem;
+    border: none;
+    border-radius: 50%;
+}
+
+.img-text h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.p-mobile-header{
+    display: none;
+}
+
+/*************************Detail section*******************/
+.p-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+.p-select-bars{
+    width: 760px;
+    height: 55px;
+    background: #DEBCEE;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.p-select-bars h1{
+    color: rgb(249, 249, 249);
+    padding: .5rem;
+    text-align: center;
+    color: #000900;
+    font-weight: 600;
+}
+
+.forms{
+    margin-top: 1rem;
+    height: 30%;
+    width: 650px;
+    margin: 0 2.5rem;
+    display: none;
+    margin-bottom: 1.5rem;
+}
+
+.forms.active{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-det{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+}
+
+input{
+    margin-top: .5rem;
+    height: 4rem;
+    border: #e3e3e3 solid;
+    border-radius: 1rem;
+}
+
+input::placeholder{
+    border: #DEBCEE;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .6rem;
+}
+
+
+.btn button{
+    margin-left: 33rem;
+    height: 2rem;
+    width: 90px;
+    height: 50px;
+    background: #8030D0;
+    columns: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #6f537d;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.p-socials img{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+
+/******************Mobile Responsiveness*****/
+@media (max-width: 800px) {
+    .p-mobile-header{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+    }
+
+    .mobile-menu{
+        margin: .7rem 3.5rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+    }
+    .mobile-menu span{
+        border: #a06abb solid 1px;
+        width: 3rem;
+        height: 2rem;
+        margin-right: 1rem;
+    }
+    .mobile-menu span i{
+        font-size: 2rem;
+        margin-top: 8rem;
+        margin-left: .4rem;
+    }
+    #p-bar-menu{
+        display: none;
+        margin-top: .5rem;
+        background-color: #fff;
+        opacity: 1;
+        height: 85vh;
+        width: 80vw;
+    }
+    #p-bar-menu.active{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .p-bar-menu-list{
+        margin: 3rem;
+        border: #e3e3e3 solid 4px;
+        border-radius: 5px;
+        width: 80%;
+        height: 5rem;
+    }
+    .p-bar-menu-list a{
+        padding: .8rem .8rem;
+        margin-left: 2rem;
+        color: #000;
+        z-index: 1;
+    }
+    .p-bar-menu-list a h3 {
+        margin: 0 3rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .mobile-text{
+        margin: .6rem 5rem;
+        color: #000;
+        font-size: 1.4rem;
+    }
+
+    .main-section{
+        max-height: 120vh;
+        background: #fff;
+    }
+    #main-section.active{
+        display: none;
+    }
+    .back{
+        background: #fff;
+        margin: 0;
+    }
+    .forms{
+        margin-top: -1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .p-img{
+        width: 19rem;
+        height: 19rem;
+    }
+    .p-details{
+        margin-top: 10rem;
+    }
+   .p-select-bars{
+    display: none;
+   }
+   
+    .form-det{
+        margin-top: 1.5rem;
+    }
+    input{
+        margin-top: 1.5rem;
+    }
+    .btn button{
+       display: none;
+    }
+    .p-mobile_header{
+        background:#fff;
+        display: flex;
+        justify-content: space-around;
+    }
+    .p-socials{
+        margin-top: -3rem;
+        margin-bottom: 1rem;
+    }
+    .p-mobile{
+        background: none;
+    }
+
+    .header{
+        display: none;
+    }
+
+    #section-4.active{
+        display: none;
+    }
+
+    .p-bar-menu-list span{
+        display: flex;
+        flex-direction: row;
+        border: none;
+    }
+    .p-bar-menu-list span i{
+        font-size: 2.5rem;
+        margin-top: -.5rem;
+        margin-left: 1rem;
+    }
+}
